@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf helloworld</title>
+    <script th:src="|@{/js/actions.js}|"></script>
+
+</head>
+<body>
+<h1 th:text="'Thymeleaf hw :' + ${message}"></h1>
+<p th:text="'Thymeleaf hw :' + ${message}"></p>
+<button th:onclick="demo()"> Alert from thymeleaf javascript</button>
+</body>
+</html>
